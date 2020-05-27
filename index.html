@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
+    <script src="js/mail.js"></script>
     <title>BENNY JOO</title>
   </head>
   <body>
@@ -66,7 +67,7 @@
             <span class="intro-letter">r</span>
             <span class="intro-letter">.</span>
           </h1>
-          <p>React / JavaScript / CSS</p>
+          <p>React / JavaScript / TypeScript</p>
           <a href="#about">meet me</a>
         </div>
         <div class="hero__image">
@@ -94,7 +95,7 @@
           <p>
             p.s.
             <span class="book_recommend"
-              ><a target="_blank" href="hbj.com">Book Recommendations</a></span
+              ><a target="_blank" href="#">Book Recommendations</a></span
             >
           </p>
           <p class="social">
@@ -258,15 +259,13 @@
 
       <div class="contact" id="contact">
         <h1>Contact</h1>
-        <form>
-          <input type="text" name="name" placeholder="Full Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="address@example.com" disabled />
+        <form onsubmit="return submitForm(this);">
+          <input type="text" placeholder="Subject" name="subject" />
           <textarea
-            name="message"
             placeholder="Message"
             cols="30"
             rows="10"
+            name="message"
           ></textarea>
           <input class="submit" type="submit" value="Send" />
         </form>
