@@ -19,7 +19,7 @@ const routes = {
     dest: "dist/img",
   },
   js: {
-    src: "src/js/script.js",
+    src: "src/js/*.js",
     dest: "dist/js",
   },
 };
