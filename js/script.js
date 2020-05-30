@@ -13,11 +13,8 @@ var showClickedCategory = function showClickedCategory(event) {
   var categories = document.querySelectorAll(".work__design");
 
   for (i = 0; i < categories.length; i++) {
-    categories[i].classList.remove("showCategory");
     categories[i].classList.add("hideCategory");
   }
 
   category.classList.remove("hideCategory");
-  category.classList.add("showCategory");
 };
-

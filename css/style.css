@@ -321,21 +321,38 @@ i {
 }
 
 .work__design {
-  padding-left: 12px;
+  padding-left: 14px;
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work__design a {
+  text-decoration: none;
+  color: #e84118;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.work__design a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.work__design div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 300px;
+  margin-right: 11.5px;
 }
 
 .work__design img {
   width: 300px;
   height: 220px;
   cursor: pointer;
-  margin: 3px;
-}
-
-.work__design img:hover {
-  opacity: 0.75;
 }
 
 .work__category .active {
@@ -345,10 +362,6 @@ i {
 
 .hideCategory {
   display: none;
-}
-
-.showCategory {
-  display: block;
 }
 
 .contact form {
