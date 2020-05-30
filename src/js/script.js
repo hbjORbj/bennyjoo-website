@@ -11,10 +11,7 @@ const showClickedCategory = (event) => {
   const category = document.querySelector(`.work__design__${id}`);
   const categories = document.querySelectorAll(".work__design");
   for (i = 0; i < categories.length; i++) {
-    categories[i].classList.remove("showCategory");
     categories[i].classList.add("hideCategory");
   }
-
   category.classList.remove("hideCategory");
-  category.classList.add("showCategory");
 };
