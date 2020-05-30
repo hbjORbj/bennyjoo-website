@@ -20,3 +20,4 @@ var showClickedCategory = function showClickedCategory(event) {
   category.classList.remove("hideCategory");
   category.classList.add("showCategory");
 };
+
