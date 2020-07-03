@@ -382,6 +382,14 @@ form textarea {
   cursor: auto;
 }
 
+form input {
+  font-size: 16px;
+}
+
+form textarea {
+  font-size: 14px;
+}
+
 .submit {
   cursor: pointer;
   background-color: #e84118;
@@ -392,7 +400,7 @@ form textarea {
 
 footer {
   background-color: #192a56;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
